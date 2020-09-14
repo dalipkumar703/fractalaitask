@@ -17,12 +17,12 @@ const App = () => {
   // const prevBucket = usePrevious(buckets);
   
   useEffect(() => {
-    if (pageRef.current.className.indexOf('inputSearch') < 0){
+    if (document.activeElement.className.indexOf('inputSearch') < 0){
       setOpen(false);
     } else {
       setOpen(true);
     }
-  },[pageRef])
+  },[bucketName])
 
   const handleOnChange = (event) => { 
       setBucketName(event.target.value);
@@ -49,7 +49,6 @@ const App = () => {
       aria-describedby="basic-addon2"
       aria-expanded={open}
     onChange={handleOnChange}
-    onFocusOut={()=>setOpen(false)}
     value={bucketName}
     />
     <InputGroup.Append>
