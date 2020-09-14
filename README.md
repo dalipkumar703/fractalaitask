@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is simple to do list and bucket makers for remember activities made for fractaltask.
 
 ## Available Scripts
 
